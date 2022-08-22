@@ -1,17 +1,30 @@
 import React from 'react'
 import { Button } from '@mui/material'
+import './Categories.css'
 
 type Props = {}
 
 const Categories = (props: Props) => {
     return (
         <>
-            <Button color="inherit">Nature</Button>
-            <Button color="inherit">People</Button>
-            <Button color="inherit">Trips</Button>
-            <Button color="inherit">Animals</Button>
-            <Button color="inherit">Fashion</Button>
-            <Button color="inherit">Tech</Button>
+            <Button className="cat-btn" color="inherit">
+                Nature
+            </Button>
+            <Button className="cat-btn" color="inherit">
+                People
+            </Button>
+            <Button className="cat-btn" color="inherit">
+                Trips
+            </Button>
+            <Button className="cat-btn" color="inherit">
+                Animals
+            </Button>
+            <Button className="cat-btn" color="inherit">
+                Fashion
+            </Button>
+            <Button className="cat-btn" color="inherit">
+                Tech
+            </Button>
         </>
     )
 }
