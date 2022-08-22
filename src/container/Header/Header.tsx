@@ -1,15 +1,10 @@
 import React from 'react'
-import {
-    Container,
-    AppBar,
-    Toolbar,
-    Typography,
-    IconButton,
-    Button,
-} from '@mui/material'
-import MenuIcon from '@mui/icons-material/Menu'
+import { Container, AppBar, Toolbar, Typography } from '@mui/material'
 import Menu from 'components/Menu/Menu'
 import Categories from 'components/Categories/Categories'
+import Logo from 'components/Logo/Logo'
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz'
+import SearchIcon from '@mui/icons-material/Search'
 
 type Props = {}
 
@@ -18,23 +13,12 @@ const Header = (props: Props) => {
         <AppBar position="static">
             <Container>
                 <Toolbar>
-                    Blog template
-                    <IconButton
-                        size="small"
-                        edge="end"
-                        color="inherit"
-                        aria-label="menu"
-                        sx={{ mr: 2 }}
-                    >
-                        <MenuIcon />
-                    </IconButton>
+                    <Logo />
+                    <SearchIcon />
                     <Menu />
-                    <Typography
-                        variant="h6"
-                        component="div"
-                        sx={{ flexGrow: 1 }}
-                    ></Typography>
+                    <Typography sx={{ flexGrow: 1 }}></Typography>
                     <Categories />
+                    <MoreHorizIcon fontSize="large" />
                 </Toolbar>
             </Container>
         </AppBar>
